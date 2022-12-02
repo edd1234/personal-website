@@ -7,7 +7,7 @@ function goAboutMe() {
 }
 
 function goMainPage() {
-    location.href= "main.html"
+    location.href= "index.html"
 }
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");

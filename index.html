@@ -1,0 +1,53 @@
+<html lang="en">
+    <head>
+        <title>Eddie Woo's personal webpage</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="https://kit.fontawesome.com/c1bfc16881.js" crossorigin="anonymous"></script>
+        <script src="webpage.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <div id="nav-name" aria-label="eddie woo name">Eddie Woo</div>
+            <a onClick="goMainPage()" aria-label="home button">Home</a>
+            <a onClick="goAboutMe()" aria-label="about me button">About Me</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()" aria-label="dropdown button">Projects</button>
+                <div class="dropdown-content" id="myDropdown" aria-label="project dropdown content">
+                  <a id = "dropdown-link" onClick="goCityProject()">City Growth Data Science Project</a>
+                  <a id = "dropdown-link" href="#">Social Media Application (TBD)</a>
+                </div>
+            </div> 
+            <a href="https://docs.google.com/document/d/1Y6jvwZm6B68egCADHy3OayfNAM89FtIAq22plk4-VVA/edit?usp=sharing">Resume</a>
+        </div>
+        <div class="homepage-description">
+            <div class = "home-blurb">My name is <b>Eddie Woo</b> and I'm currently a senior studying Computer Science and Economics!</div>
+            <div class = "home-blurb">Here are some of my projects below <i class="fa-regular fa-hand-point-down" aria-label = "hand pointed down"></i></div>
+        </div>
+        <div class="project-container">
+            <div class="project-box" aria-label="City Growth Data Science Project">
+                <img id="project-image" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="city project image">
+                <div class="project-name"><b>Cities Growth Data Science Model</b></div>
+                <div class="project-description" aria-label="City Growth Data Science Project description">
+                    <div class="project-text">
+                        <p><b style="color: rgb(229, 66, 93)">Languages/Software/Packages Used:</b> Python, Jupyter Notebook, Pandas, Scikit-Learn, NumPy</p>
+                        <p> <b style="color:rgb(229, 66, 93)">Description: </b>I used Python and Jupyter Notebook to study growth in American cities. I created machine learning
+                            models that predicted key demographic trends within the top 800 largest US cities.</p>
+                        <button class="read-more-button" onClick="goCityProject()" aria-label="read more button">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-box" aria-label="Social Media App Project">
+                <img id="project-image" src="https://lh3.googleusercontent.com/0kKQNYXknHfV5OgFAWBG_ZwBG9VmtqcrGs__8AiJfdPYz-M0pAaST1wMN32FB-IDIgcMAoRAQ4O-K6gn90z83a61WXxIXbYoFaiuzkiNVdaiDH_Xurmoqk2CuGhOrm1HWcH3FBUsOA=w2400" alt="social media app image">
+                <div class="project-name"><b>Social Media Application</b></div>
+                <div class="project-description" aria-label="Social Media App Project description">
+                    <div class="project-text">
+                        <p><b style="color: rgb(229, 66, 93)">Languages/Software/Packages Used:</b> HTML, CSS, Javascript, Python, React</p>
+                        <p> <b style="color:rgb(229, 66, 93)">Description: </b>I created a photo-sharing social media application for my Introduction to Web Development 
+                            class using HTML, CSS, and other web developement tools</p>
+                        <button class="read-more-button" aria-label="read more button">Read More (TBD)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
