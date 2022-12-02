@@ -1,0 +1,68 @@
+<html lang="en">
+    <head>
+        <title>Eddie Woo's personal webpage</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="https://kit.fontawesome.com/c1bfc16881.js" crossorigin="anonymous"></script>
+        <script src="webpage.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <div id="nav-name" aria-label="eddie woo name">Eddie Woo</div>
+            <a onClick="goMainPage()" aria-label="home button">Home</a>
+            <a onClick="goAboutMe()" aria-label="about me button">About Me</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()" aria-label="dropdown button">Projects</button>
+                <div class="dropdown-content" id="myDropdown" aria-label="project dropdown content">
+                  <a id = "dropdown-link" onClick="goCityProject()">City Growth Data Science Project</a>
+                  <a id = "dropdown-link" href="#">Social Media Application (TBD)</a>
+                </div>
+            </div> 
+            <a href="https://docs.google.com/document/d/1Y6jvwZm6B68egCADHy3OayfNAM89FtIAq22plk4-VVA/edit?usp=sharing">Resume</a>
+        </div>
+        <div class="project-page-div" aria-label="project container">
+            <img id="project-page-image" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="project page image">
+            <div class="page-title">
+                <p id="title-text" aria-label="project title"><u><b>City Growth Data Science Project</b></u></p>
+            </div>
+            <div class="project-page-text" aria-label="project content">
+                <p><b style="color: rgb(229, 66, 93)">Languages/Software/Packages Used:</b> Python, Jupyter Notebook, Pandas, Scikit-Learn, NumPy</p>
+                <p><b style="color: rgb(99, 122, 250)">Machine Learning Models:</b> Linear Regression, Logistic Regression, K-Nearest Neighbors, K-Means, Random Forest</p>
+                <p id="summary-text-title"><b style="color: rgb(54, 54, 54)">Purpose:</b></p>
+                <p id="summary-text">American cities are changing rapidly from trends seen in the rise of the Sun Belt to the decline of the industrial Midwest. For me personally, cities have always been a fascinating subject and I wanted to study
+                    them using statistical and data analysis techniques to explain some of these trends.
+                </p>
+                <p id="summary-text-title"><b style="color: rgb(140, 19, 246)">Summary and Results:</b></p>
+                <p id="summary-text">For this project, I worked with datasets from the US Census Bureau, the FBI Crime Database, 
+                    Bureau of Labor Statistics to model urban demographic trends. Specifically, I looked at data on the 800 largest
+                    cities in the US.
+                </p>
+                <p> Here are the types of data that I looked at:</p>
+                <ul>
+                    <li>Financial (Income, Home Price, Poverty Levels, Education Level)</li>
+                    <li>Crime (Violent Crime Rate)</li>
+                    <li>Demographic (Population Growth, Race)</li>
+                    <li>Geographical</li>
+                    <li>Climate</li>
+                    <li>Transportation</li>
+                </ul>
+                <p> These are the steps in which I took when working on this project:</p>
+                <ul>
+                    <li>Data Cleaning</li>
+                    <li>Exploratory Data Analysis (EDA)</li>
+                    <li>Creating ML Models</li>
+                </ul>
+                
+
+                <p>Overall, the best ML models were able to accurately predict 70% of the test dataset into three categories of cities
+                    (low-growth: &lt5%, medium growth: 5%-10%, high-growth: &gt10%). 
+                </p>
+                <p>Some of the features were not included into the model due to multicollinearity concerns. As such, the total amount of usable features 
+                    were fewer than initally looked at. Furthermore, the model was able to predict the model accurately but it could not predict the specific growth
+                    rate as well. The model was able to predict whether a city was a high-growth city or not but not by how much a certain city would increase (or decrease)
+                </p>
+            </div>
+
+        </div>
+
+    </body>
+</html>

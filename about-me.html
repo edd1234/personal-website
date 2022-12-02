@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <title>Eddie Woo's personal webpage</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="https://kit.fontawesome.com/c1bfc16881.js" crossorigin="anonymous"></script>
+        <script src="webpage.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <div id="nav-name" aria-label="eddie woo name">Eddie Woo</div>
+            <a onClick="goMainPage()" aria-label="home button">Home</a>
+            <a onClick="goAboutMe()" aria-label="about me button">About Me</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()" aria-label="dropdown button">Projects</button>
+                <div class="dropdown-content" id="myDropdown" aria-label="project dropdown content">
+                  <a id = "dropdown-link" onClick="goCityProject()">City Growth Data Science Project</a>
+                  <a id = "dropdown-link" href="#">Social Media Application (TBD)</a>
+                </div>
+            </div> 
+            <a href="https://docs.google.com/document/d/1Y6jvwZm6B68egCADHy3OayfNAM89FtIAq22plk4-VVA/edit?usp=sharing">Resume</a>
+        </div>
+        <div class="project-page-div">
+            <img id="about-me-image" src="https://lh3.googleusercontent.com/VBInKAC2vop14zk3xK2jURNSKWiCp9tCfn902Ank1GbUrWOkp5rZH_7uRWQrlyijHKOYzzj0UlOETI8m9jQYvpUi0h7PzLJCOd_JeC4N_YA4MFrHYk7iFPVCDW19SOUcbhQ14RZL5A=w2400" alt="eddie woo profile pic">
+            <div class="about-page-title">
+                <p id="title-text"><u><b>About Me</b></u></p>
+            </div>
+            <div class="about-page-text" aria-label="eddie woo bio and skills">
+                <p>I'm currently a senior at Northwestern University studying Computer Science and Economics.
+                    I have a passion for data and love using stats to find interesting insights! </p>
+                <p>Here are some skills/languages that I know!</p>
+                    <ul><li><b>Programming Languages:</b> Python, SQL, C++, HTML, CSS, Javascript, Racket</li></ul>
+                    <ul><li><b>MS Products:</b> Azure, Excel, Powerpoint</li></ul>
+                    <ul><li><b>Other Skills: </b>Tableau, Google Data Studio</li></ul>
+
+
+
+                <p>Feel free to contact me via email or Linkedin below:</p>
+                <ul><b><i class="fa-regular fa-envelope" aria-label="contact email icon"></i> :</b> eddiewoo2023@u.northwestern.edu</p></ul>
+                <ul><b><i class="fa-brands fa-linkedin" aria-label="linkedin icon"></i> :</b> linkedin.com/in/edward-j-woo/</ul>
+            </div>
+        </div>
+</html>
